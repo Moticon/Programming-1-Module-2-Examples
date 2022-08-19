@@ -9,12 +9,15 @@ void setWidth() {
 	ColorText setTextColor;
 
 	setTextColor.setColors(Red, Black); 
+
 	cout << "FIRST - No setwidth control. " << DOUBLE_ENDLINE;
 	cout << "\t" << "age: " << age1 << " years old." << endl;
 	cout << "\t" << "age: " << age2 << " years old." << endl;
 	cout << "\t" << "age: " << age3 << " years old." << DOUBLE_ENDLINE;
+
 	setTextColor.setColors(Yellow, Blue); 
-	cout << "Notice that the numbers are different sizes. " << endl <<
+
+	cout << "Notice that the values/numbers are different sizes. " << endl <<
 		"This causes the words after the numbers to be off from each other." << endl; 
 	cout << "Also, it's not clear but the numbers are aligned right in their field. " << endl;
 	cout << "the field width defaults to the minimum number of spaces to display the value. " << endl;
@@ -28,6 +31,7 @@ void setWidth() {
 	cout << "\t" << "age: " << setw(4) << age1 << " years old." << endl;
 	cout << "\t" << "age: " << setw(4) << age2 <<  " years old." << endl;
 	cout << "\t" << "age: " << setw(4) << age3 <<  " years old." << DOUBLE_ENDLINE;
+
 	setTextColor.setColors(Yellow, Blue);
 	cout << "Now the numbers are all in a 'field' that is four characters wide. " << endl;
 	cout << "Notice also that the numbers are 'right-aligned'. They are pushed up " << endl <<
@@ -55,7 +59,6 @@ void leftAndRight() {
 	cout << "\t" << "age: [" << setw(10) << age2 << "] years old." << endl;
 	cout << "\t" << "age: [" << setw(10) << age3 << "] years old." << DOUBLE_ENDLINE;
 
-	cout << "First, let's display our ages in a field that is 10 characters wide." << endl;
 	cout << "Now we'll change it to left justification.  Look in the code and see that " << endl;
 	cout << "We only have to put ""left "" one time. then it applies to everything after that. " << endl; 
 
@@ -140,9 +143,12 @@ void liningUpDollars() {
 	cout << "We'll also set the display to 'fixed' which will force a decimal output." << DOUBLE_ENDLINE;
 
 	cout << setprecision(2) << fixed;
-	cout << left << setw(20) << "Purchase Total: " << "$" << right << setw(10) << sales << endl;
-	cout << left << setw(20) << "State Tax: " << "$" << right << setw(10) << stateTax << endl;
-	cout << left << setw(20) << "City Tax: " << "$" << right << setw(10) << cityTax << DOUBLE_ENDLINE;
+	cout << left << setw(20) << "Purchase Total: " 
+		<< "$" << right << setw(10) << sales << endl;
+	cout << left << setw(20) << "State Tax: " 
+		<< "$" << right << setw(10) << stateTax << endl;
+	cout << left << setw(20) << "City Tax: " 
+		<< "$" << right << setw(10) << cityTax << DOUBLE_ENDLINE;
 
 	setTextColor.setColors(White, Black);
 	cout << "Puuurfect! " << endl;
@@ -156,9 +162,9 @@ void liningUpDollars() {
 }
 
 void readSingleChars() {
-	char letter1, letter2, letter3; 
+	char letter1; 
 
 	cout << "Enter 1 character please: ";
 	cin >> letter1;
-	cout << "The letter you entered is """ << letter1 << """; 
+	cout << "The letter you entered is """ << letter1 << ""; 
 }

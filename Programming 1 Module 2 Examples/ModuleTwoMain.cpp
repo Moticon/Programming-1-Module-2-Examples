@@ -2,8 +2,8 @@
 
 void main() {
 
-	char choice = ':';
-	ColorText setTextColor;
+	char choice = ':'; // this char used to get user choice
+	ColorText setTextColor; // this object controls screen color
 
 	while (toupper(choice) != 'Q') {
 		clearScreen();
@@ -13,20 +13,10 @@ void main() {
 			<< "1) Examples of setwidth." << endl
 			<< "2) Left and right Justification " << endl
 			<< "3) Set precision, left, etc for $$ display" << endl
-			<< "4) Single Character (char) input" << endl
-			<< "5) " << endl
-			<< "6) No Example Here. :)" << endl
-			<< "7) No Example Here. :) " << endl
-			<< "8) No Example Here. :)" << endl
-			<< "9) No Example Here. :)" << DOUBLE_ENDLINE;
-
-
-		setTextColor.setColors(Yellow, Black);
-		cout << "A) Code snippet - also not here... :)" << DOUBLE_ENDLINE;
+			<< "4) Single Character (char) input" <<  DOUBLE_ENDLINE;
 
 		setTextColor.setColors(Green, Black);
 		cout << "Q) Quit Program" << DOUBLE_ENDLINE;
-
 		setTextColor.setColors(White, Black);
 
 		choice = getMenuChoice("Enter choice for Example to display: ", false);

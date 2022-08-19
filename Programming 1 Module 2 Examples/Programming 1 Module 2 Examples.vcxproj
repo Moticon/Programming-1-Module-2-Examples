@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Programming 1 Module 8 In Class Examples\Programming 1 Module 8 In Class Examples\ExampleFunctions.cpp" />
-    <ClCompile Include="..\..\Programming 1 Module 8 In Class Examples\Programming 1 Module 8 In Class Examples\main.cpp" />
-    <ClCompile Include="..\..\Programming 1 Module 8 In Class Examples\Programming 1 Module 8 In Class Examples\SupportFunctions.cpp" />
+    <ClCompile Include="Module2ExampleFunctions.cpp" />
+    <ClCompile Include="ModuleTwoMain.cpp" />
+    <ClCompile Include="SupportFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Programming 1 Module 8 In Class Examples\Programming 1 Module 8 In Class Examples\ColorText.h" />
-    <ClInclude Include="..\..\Programming 1 Module 8 In Class Examples\Programming 1 Module 8 In Class Examples\example.h" />
+    <ClInclude Include="ColorText.h" />
+    <ClInclude Include="example.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
